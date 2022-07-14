@@ -23,9 +23,12 @@ let [results, setResults]= useState(null);
   }
   return (
     <div className="Dictionary">
+      <section>
       <form onSubmit={search}>
+        <h1>What are you Searching for?</h1>
         <input type="search" onChange={handleKeywordChange} />
       </form>
+      </section>
       <Results  results ={results}/>
     </div>
   );
